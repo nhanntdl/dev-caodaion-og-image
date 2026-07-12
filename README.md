@@ -3,7 +3,7 @@
 This is a standalone, lightweight serverless project powered by [Vercel OG](https://vercel.com/docs/functions/og-image-generation) (built on Satori). It dynamically generates beautiful, customized Social Share (Open Graph) images for all pages on the CaoDaiON platform on the fly.
 
 ## Project Structure
-- `api/og.jsx`: The serverless function that renders HTML/CSS into a PNG image. It uses Node.js runtime and streams the image response directly.
+- `api/og.js`: The serverless function that renders HTML/CSS into a PNG image. It uses Node.js runtime, uses `React.createElement` instead of JSX to avoid transpilation errors, and streams the image response directly.
 - `package.json`: Project manifest (includes `"type": "module"` and dependencies for `@vercel/og` and `react`).
 
 ## How to Deploy to Vercel (100% Free)

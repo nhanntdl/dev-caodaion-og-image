@@ -1,17 +1,15 @@
 {
-  "name": "caodaion-og-image",
+  "name": "dev-caodaion-og-image",
   "version": "1.0.0",
-  "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vercel dev",
-    "deploy": "vercel"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "@vercel/og": "^0.6.2",
-    "react": "^18.2.0"
-  },
-  "devDependencies": {
-    "vercel": "^37.0.0"
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   }
 }
